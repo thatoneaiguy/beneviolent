@@ -1,0 +1,42 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "com.thatoneaiguy.beneviolent",
+		"id": "beneviolent",
+		"version": "${version}",
+		"metadata": {
+			"name": "Beneviolent",
+			"description": "Love is poison. A sweet poison, yes, but it will kill you all the same.",
+			"contributors": {
+				"thatoneaiguy": "Owner",
+				"ElementEdge": "Texture"
+			},
+			"contact": {
+			},
+			"icon": "assets/beneviolent/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "com.thatoneaiguy.beneviolent.Beneviolent"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.0-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=4.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.2"
+			},
+			{
+				"id": "lodestone",
+				"versions": "*"
+			}
+		]
+	},
+	"mixin": "beneviolent.mixins.json"
+}
